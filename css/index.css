@@ -79,7 +79,7 @@ img{
 @media screen and (max-width:375px) {
     .intro>h1{
         font-size: 3em;
-        line-height: 1.8;
+        line-height: 1.5;
     }
     .intro>p{
         line-height: 1.6;
