@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="images/icon.svg">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/vue.js"></script>
+    <script src="js/index.js"></script>
+    <title>Time Capsule</title>
 </head>
 <body>
+    <div class="first" id="box">
+        <div class="intro">
+            <h1>Welcome To Our Time Capsule</h1>
+            <p>Unlock about <span id="time" v-text="time"></span> seconds after your approach</p>
+        </div>
+        <button @click="openWindow" :style="{opacity:opacity}" class="btn">Let's Click To Submit !!</button>
+        <div class="msg" v-if="open"> 
+                <input type="text" v-model="user" placeholder="使用者代稱">
+                <input type="email" v-model="mail" placeholder="電子信箱"><br>
+                <textarea v-model="content"></textarea><br>
+                <button @click="submit()">確認送出</button>
+                <button @click="close()">取消頁面</button>
+        </div>
+    </div>
     
 </body>
 </html>
