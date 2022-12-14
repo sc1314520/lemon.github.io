@@ -76,7 +76,7 @@ img{
     cursor: pointer;
     background: rgb(255, 123, 0);
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width:415px) {
     .intro>h1{
         font-size: 3em;
         line-height: 1.5;
